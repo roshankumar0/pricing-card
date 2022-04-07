@@ -39,6 +39,7 @@ li a {
 .pricing__container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 .price {
   max-width: 450px;
@@ -75,6 +76,7 @@ form,
   transition: all 0.4s ease;
   margin: 15px 0;
 }
+
 select#select {
   min-height: 56px;
   width: 100%;
@@ -130,7 +132,7 @@ select#select:focus {
 .pricing__card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 .card h2 {
   margin-top: 0;
@@ -207,6 +209,9 @@ select#select:focus {
   .card h2 {
     font-size: 26px;
     margin-bottom: 4px;
+  }
+  select#select {
+    font-size: 18px;
   }
 }
 
