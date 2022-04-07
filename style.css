@@ -70,8 +70,11 @@ form,
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
   font-size: 20px;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.4s ease;
+  margin: 15px 0;
 }
-
 select#select {
   min-height: 56px;
   width: 100%;
@@ -102,6 +105,10 @@ select#select:focus {
   color: #6f7f96;
   font-size: 24px;
   font-weight: 700;
+  margin: 13px 0;
+}
+.card--pro p {
+  color: #36444f;
 }
 .btn--primary {
   padding: 18px 40px;
@@ -137,7 +144,7 @@ select#select:focus {
   color: #36444f;
 }
 .card--pro {
-  margin-top: -50px;
+  margin-top: -68px;
 }
 .card h3 {
   margin-top: 0px;
@@ -159,31 +166,41 @@ select#select:focus {
   transition: all 0.4s ease-in-out;
 }
 .card:hover {
-  transform: translateY(-5px);
-  border: 1px solid gray;
+  border-color: #d5d9e0;
+  box-shadow: 0 0 0 0 rgb(25 55 101 / 4%);
+  -webkit-transform: translate(0, -8px);
+  -ms-transform: translate(0, -8px);
+  transform: translate(0, -8px);
+  color: #6f7f96;
 }
-@media only screen and (max-width: 479px) {
+.btn:hover {
+  border-color: #e75672;
+  background-color: #e75672;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
   .pricing__card {
     grid-template-columns: repeat(1, 1fr);
   }
-  .price{
+  .price {
     padding: 23px 25px 33px;
     margin: 0px auto;
     text-align: center;
     padding-right: 16px;
     padding-left: 16px;
   }
-  .price h1{
-    margin-bottom: 10px
+  .price h1 {
+    margin-bottom: 10px;
   }
-  .price p{
+  .price p {
     margin-bottom: 10px;
     text-align: center;
   }
   .card {
     margin: 12px 16px;
   }
-  .image__card{
+  .image__card {
     max-width: 108px;
     margin-bottom: 15px;
   }
@@ -193,6 +210,22 @@ select#select:focus {
   }
 }
 
-@media screen and (min-device-width: 480px) and (max-device-width: 768px){
-
+@media screen and (min-device-width: 769px) and (max-device-width: 991px) {
+  .pricing__card {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 40px;
+    gap: 40px;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card div {
+    flex: 1;
+    align-self: self-end;
+    padding: 0 10px;
+  }
+  .card--pro {
+    margin: 0;
+  }
 }
