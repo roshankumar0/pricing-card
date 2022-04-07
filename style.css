@@ -20,7 +20,10 @@ li {
   list-style: none;
   display: flex;
   align-items: center;
-  margin-top: 9px;
+  margin-top: 14px;
+}
+li img {
+  border-radius: 50%;
 }
 li a {
   text-decoration: none;
@@ -34,13 +37,25 @@ li a {
   margin-left: 10px;
 }
 .pricing__container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 .price {
   max-width: 450px;
-  margin: 50px auto;
+  margin: 80px auto;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
 }
+.price a {
+  background-color: transparent;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #36444f;
+  text-decoration: underline;
+}
+
 form,
 .btn {
   display: flex;
@@ -83,6 +98,11 @@ select#select:focus {
   min-width: 29px;
   border-radius: 1000px;
 }
+.card p {
+  color: #6f7f96;
+  font-size: 24px;
+  font-weight: 700;
+}
 .btn--primary {
   padding: 18px 40px;
   border: 1px solid #46b5bf;
@@ -105,7 +125,7 @@ select#select:focus {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-h2 {
+.card h2 {
   margin-top: 0;
   margin-bottom: 16px;
   color: #36444f;
@@ -113,9 +133,15 @@ h2 {
   line-height: 1.289em;
   font-weight: 700;
 }
-h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
+.pro__card p {
+  color: #36444f;
+}
+.card--pro {
+  margin-top: -50px;
+}
+.card h3 {
+  margin-top: 0px;
+  margin-bottom: 28px;
   color: #36444f;
   font-size: 24px;
   line-height: 1.375em;
@@ -130,12 +156,43 @@ h3 {
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 0 4px 20px 0 rgb(25 55 101 / 4%);
+  transition: all 0.4s ease-in-out;
 }
-@media only screen and (max-width: 600px) {
+.card:hover {
+  transform: translateY(-5px);
+  border: 1px solid gray;
+}
+@media only screen and (max-width: 479px) {
   .pricing__card {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card{
-      display: flex;
+  .price{
+    padding: 23px 25px 33px;
+    margin: 0px auto;
+    text-align: center;
+    padding-right: 16px;
+    padding-left: 16px;
   }
+  .price h1{
+    margin-bottom: 10px
+  }
+  .price p{
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .card {
+    margin: 12px 16px;
+  }
+  .image__card{
+    max-width: 108px;
+    margin-bottom: 15px;
+  }
+  .card h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px){
+
 }
