@@ -213,6 +213,9 @@ select#select:focus {
   select#select {
     font-size: 18px;
   }
+  .btn--primary{
+    padding: 0;
+  }
 }
 
 @media screen and (min-device-width: 769px) and (max-device-width: 991px) {
