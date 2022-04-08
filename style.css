@@ -1,7 +1,12 @@
+
 * {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+}
+@font-face {
+  font-family: Thicccboi,sans-serif;
+  src: url(/TTF/THICCCBOI-Bold.ttf);
 }
 body {
   margin: 0;
@@ -42,12 +47,16 @@ li a {
   padding: 0 20px;
 }
 .price {
-  max-width: 450px;
   margin: 80px auto;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: 1;
+  text-align: center;
+  max-width: 621px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .price a {
   background-color: transparent;
@@ -133,6 +142,7 @@ select#select:focus {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  margin-top: 120px;
 }
 .card h2 {
   margin-top: 0;
@@ -180,7 +190,16 @@ select#select:focus {
   background-color: #e75672;
   color: #fff;
 }
-
+.price h1{
+  margin-bottom: 16px;
+  color: #36444f;
+}
+.price p{
+  margin-bottom: 10px;
+  text-align: center;
+  color: #36444f;
+  
+}
 @media only screen and (max-width: 768px) {
   .pricing__card {
     grid-template-columns: repeat(1, 1fr);
@@ -194,6 +213,7 @@ select#select:focus {
   }
   .price h1 {
     margin-bottom: 10px;
+    font-size: 32px;
   }
   .price p {
     margin-bottom: 10px;
