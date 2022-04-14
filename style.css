@@ -3,28 +3,23 @@
   box-sizing: border-box;
   margin: 0;
 }
-/* @font-face {
-  font-family: Thicccboi, sans-serif;
-  src: url(/TTF/THICCCBOI-Bold.ttf);
-  src: url(/TTF/THICCCBOI-Medium.ttf);
-} */
 @font-face {
   font-family: "Thicccboi";
-  src: url("/TTF/THICCCBOI-Bold.ttf") format("truetype");
+  src: url("/fonts/THICCCBOI-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Thicccboi";
-  src: url("/TTF/THICCCBOI-Medium.ttf") format("truetype");
+  src: url("/fonts/THICCCBOI-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Thicccboi";
-  src: url("/TTF/THICCCBOI-SemiBold.ttf") format("truetype");
+  src: url("/fonts/THICCCBOI-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -179,10 +174,7 @@ select#select:focus {
 .pro__card p {
   color: #36444f;
 }
-.card--pro {
-  margin-top: -68px;
-  position: relative;
-}
+
 .popular-tag {
   position: absolute;
   top: 21px;
@@ -222,6 +214,9 @@ select#select:focus {
   -ms-transform: translate(0, -8px);
   transform: translate(0, -8px);
   color: #6f7f96;
+}
+.card--pro {
+  transform: translateY(-76px) !important;
 }
 .card:hover .btn {
   border-color: #e75672;
